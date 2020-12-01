@@ -5,10 +5,12 @@ pom.xml.asc
 /lib/
 /classes/
 /target/
-/checkouts/
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/
-.lein-failures
-.nrepl-port
-.cpcache/
+/public/js
+/node_modules
+/yarn.lock
+/package-lock.json
+/.shadow-cljs
+/.nrepl-port
