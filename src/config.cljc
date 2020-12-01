@@ -7,7 +7,7 @@
    :user "postgres"
    :password "dbpass"})
 
-(def pg-test
+(def db-test
   {:dbtype "postgresql"
    :dbname "postgres"
    :host "165.227.141.189"
