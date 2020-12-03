@@ -1,21 +1,17 @@
-{:source-paths
- ["src"]
-
- :dependencies [[org.clojure/java.jdbc "0.7.11"]
-                [org.postgresql/postgresql "42.2.18"]
-
-                 ]
+{:lein {:profile "+cljs"}
 
  :builds
- {:app {:target :browser
-        :output-dir "public/js"
-        :asset-path "/js"
+ {:app
+  {:target :browser
+   :output-dir "public/js"
+   :asset-path "/js"
 
-        :modules
-        {:main
-         {:entries [core]}}
-
-        :devtools
-        {:http-root "public"
-         :http-port 8020}
-        }}}
+   :modules
+   {:main
+    {:entries
+     [demo.core
+      demo.crud_test]}}
+   :devtools
+   {:http-root "public"
+    :http-port 8020}
+   }}}
